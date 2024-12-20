@@ -25,9 +25,9 @@ export default async function HomePage() {
               </Link>
             </div>
             <div className="flex items-center">
-              <Link href="/" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-indigo-600 hover:bg-indigo-50 transition duration-300">Home</Link>
-              <Link href="/server-side" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-indigo-600 hover:bg-indigo-50 transition duration-300">Server Side</Link>
-              <Link href="/fetchApi" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-indigo-600 hover:bg-indigo-50 transition duration-300">Client Side</Link>
+              <Link href="/" className="px-3 py-2 rounded-md sm:text-sm text-[13px] font-medium text-gray-700 hover:text-indigo-600 hover:bg-indigo-50 transition duration-300 ">Home</Link>
+              <Link href="/server-side" className="px-3 py-2 rounded-md sm:text-sm text-[13px] font-medium text-gray-700 hover:text-indigo-600 hover:bg-indigo-50 transition duration-300 ">Server Side</Link>
+              <Link href="/fetchApi" className="px-3 py-2 rounded-md sm:text-sm text-[13px] font-medium text-gray-700 hover:text-indigo-600 hover:bg-indigo-50 transition duration-300 ">Client Side</Link>
             </div>
           </div>
         </div>

@@ -8,11 +8,11 @@ import Header from "@/components/header"
 export default function HomePage() {
   const [scrollY, setScrollY] = useState(0)
 
-  useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY)
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [scrollY])
+  // useEffect(() => {
+  //   const handleScroll = () => setScrollY(window.scrollY)
+  //   window.addEventListener("scroll", handleScroll)
+  //   return () => window.removeEventListener("scroll", handleScroll)
+  // }, [scrollY])
   return (
 //     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
 //       {/* Navbar */}

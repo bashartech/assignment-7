@@ -30,7 +30,7 @@ export default function Header() {
           </div>
         </div>
       </nav> */}
-        <nav className={`fixed w-full z-10 transition-all duration-300 ${scrollY > 20 ? "bg-white shadow-md" : "bg-transparent"}`}>
+        <nav className={`fixed w-full z-10 transition-all duration-300`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <motion.div 

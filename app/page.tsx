@@ -2,11 +2,10 @@
 
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { useState, useEffect } from "react"
+// import { useState, useEffect } from "react"
 import Header from "@/components/header"
 
 export default function HomePage() {
-  const [scrollY, setScrollY] = useState(0)
 
   // useEffect(() => {
   //   const handleScroll = () => setScrollY(window.scrollY)

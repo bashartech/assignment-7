@@ -20,20 +20,7 @@ interface ITodo {
 export default function FetchPage() {
   const [data, setData] = useState<ITodo[]>([]);
   const [loading, setLoading] = useState(true);
-  // const { addToCart } = useCart();
-
-  // setCartCount(cartCount +1)
-
-  // useEffect(()=>{
-  //     const fetchData = async () => {
-  //         const parsedData = await fetch("https://fakestoreapi.com/products")
-  //         const response:ITodo[] = await parsedData.json()
-  //         console.log(response)
-  //        setData(response)
-  //       }
-  //       fetchData()
-  //       setLoading(false)
-  // },[setData])
+  
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
@@ -63,53 +50,7 @@ export default function FetchPage() {
         rel="stylesheet"
       />
       <Header />
-      {/* <div className="container mx-auto px-4 py-12 bg-gradient-to-br from-gray-100 to-gray-200 min-h-screen">
-    <h1 className="text-4xl font-bold text-center mb-12 text-gray-800">Our Products</h1>
-    <motion.div 
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-    >
-        {data.map((item, index) => (
-            <motion.div 
-                key={item.id}
-                className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out"
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.3, delay: index * 0.1 }}
-            >
-                <div className="relative h-64 overflow-hidden">
-                    <Image 
-                        src={item.image} 
-                        alt={item.title}
-                        layout="fill"
-                        objectFit="contain"
-                        className="transition-transform duration-300 ease-in-out hover:scale-110"
-                        
-                    />
-                    <div className="absolute top-0 right-0 bg-blue-500 text-white px-3 py-1 m-2 rounded-full text-sm font-semibold">
-                        ${item.price.toFixed(2)}
-                    </div>
-                </div>
-                <div className="p-6">
-                    <h2 className="text-xl font-semibold text-gray-800 mb-2 line-clamp-1">{item.title}</h2>
-                    <p className="text-gray-600 mb-4 line-clamp-2">{item.description}</p>
-                    <div className="flex justify-between items-center">
-                        <span className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">
-                            {item.category}
-                        </span>
-                        <Link href={`/fetchApi/${item.id}`} className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300"
-                        
-                        >
-                            View Details
-                        </Link>
-                    </div>
-                </div>
-            </motion.div>
-        ))}
-    </motion.div>
-</div> */}
+      
       <div className="min-h-screen bg-gradient-to-br from-turquoise-100 to-lavender-200 transition-all duration-500">
         <div className="container mx-auto px-4 py-12">
           <motion.h1

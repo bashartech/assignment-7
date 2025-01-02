@@ -98,6 +98,10 @@ export default function Header() {
     </nav>
 
          {/* <nav className={`fixed w-full z-10 transition-all duration-300`}>
+=======
+     
+        <nav className={`fixed w-full z-10 transition-all duration-300`}>
+>>>>>>> cc407f92d6c78f4cc68ee687a170217b68dc25d6
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <motion.div 

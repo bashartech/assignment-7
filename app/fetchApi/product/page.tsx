@@ -14,46 +14,6 @@ export default function CartPage() {
         href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
         rel="stylesheet"
       />
-    {/* <div className="container mx-auto px-4 py-12 bg-gradient-to-br from-gray-100 to-gray-200 min-h-screen">
-      <h1 className="text-4xl font-bold text-center mb-12 text-gray-800">Your Cart</h1>
-      <div>
-      <h2>Total Price: ${totalPrice()}</h2>
- </div>
-      {cartItems.length === 0 ? (
-        <p className="text-center text-lg text-gray-600">Your cart is empty.</p>
-      ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {cartItems.map((item) => (
-            <div key={item.id} className="bg-white rounded-xl overflow-hidden shadow-lg">
-              <div className="relative h-64 overflow-hidden">
-                <img src={item.image} alt={item.title} className="object-cover w-full h-full" />
-                <div className="absolute top-0 right-0 bg-blue-500 text-white px-3 py-1 m-2 rounded-full text-sm font-semibold">
-                  ${item.price.toFixed(2)}
-                </div>
-              </div>
-              <div className="p-6">
-                <h2 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h2>
-                <p className="text-gray-600 mb-4">{item.description}</p>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-700">Quantity: {item.quantity}</span>
-                  <span className="text-gray-700">Subtotal: ${item.price * item.quantity}</span>
-                  <button
-                    className="bg-red-500 hover:bg-red-600 text-white font-bold py-1 px-4 rounded-full"
-                    onClick={() => removeFromCart(item.id)}
-                  >
-                    Remove
-                  </button>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      )}
-      
-      <Link href="/checkout" className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full mt-8 block text-center">
-        Proceed to Checkout
-      </Link>
-    </div> */}
     <div className="min-h-screen bg-gradient-to-br from-turquoise-100 to-lavender-200 transition-all duration-500">
       <Header />
       <div className="container mx-auto px-4 py-12">

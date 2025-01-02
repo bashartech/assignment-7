@@ -13,7 +13,7 @@ interface ITodo {
   description: string;
   image: string;
 }
-export default function Section10({ params, }: { params: { item: string } }) {
+export default function Section10({ params, }: { params: { item?: string } }) {
   const { addToCart } = useCart();
   const [data, setData] = useState<ITodo | null>(null);
   const [loading, setLoading] = useState(true);

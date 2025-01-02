@@ -12,7 +12,7 @@ export default function HomePage() {
     const handleScroll = () => setScrollY(window.scrollY)
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+  }, [scrollY])
   return (
 //     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
 //       {/* Navbar */}
@@ -174,13 +174,6 @@ export default function HomePage() {
   )
 }
 
-function NavLink({ href, children }: { href: string, children: React.ReactNode }) {
-  return (
-    <Link href={href} className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-indigo-600 hover:bg-indigo-50 transition duration-300">
-      {children}
-    </Link>
-  )
-}
 
 function FeatureCard({ icon, title, description }: { icon: string, title: string, description: string }) {
   return (

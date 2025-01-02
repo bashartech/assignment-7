@@ -301,7 +301,7 @@ export default function Section10({ params, }: { params: { item: string } }) {
                 <span className="ml-2 text-green-500 font-semibold">In Stock</span>
               </div>
               <div className="flex gap-2 mb-6">
-                {['#23A6F0', '#2DC071', '#E77C40', '#252B42', '#808080'].map((color, index) => (
+                {['#23A6F0', '#2DC071', '#E77C40', '#252B42', '#808080'].map((color) => (
                   <motion.div
                     key={color}
                     className="w-8 h-8 rounded-full cursor-pointer"

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React, { useEffect } from 'react'
 import { useCart } from "@/components/cartContext";
 import { useState } from 'react'
-import { usePathname } from 'next/navigation'
+
 
 import { motion } from "framer-motion"
 
